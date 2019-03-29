@@ -1,10 +1,14 @@
-﻿import discord
+import discord
+from discord.ext import commands
 
 client = discord.Client()
+client = commands.Bot(command_prefix = '$')
+
 @client.event
 async def on_ready():
-    print("(っ◔◡◔)っ ♥ Etoimos o kavliarhs ♥ (っ◔◡◔)っ")
+    print("♥ Ready (っ◔◡◔)っ")
     await client.change_presence(game=discord.Game(name="Find me @ giannhsgg"))
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -48,4 +52,5 @@ async def on_message(message):
         await client.send_message(message.channel, "eisai ultimate kathisterimenos")
 
 client.run('NTUzOTczMzY3OTU1MjU5NDMz.D31rKw.F5qLGDjWlVy0RGAO_5eFT-U5sWY')
+
 
