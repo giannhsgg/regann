@@ -47,10 +47,5 @@ async def on_message(message):
     if message.content == "kurwa":
         await client.send_message(message.channel, "eisai ultimate kathisterimenos")
 
-
-
-#<a href="\\YourSystem\YourFolder\YourApplication.exe"  type="application/octet-stream">Your information about the exe</a>
-    
-
 client.run('NTUzOTczMzY3OTU1MjU5NDMz.D31rKw.F5qLGDjWlVy0RGAO_5eFT-U5sWY')
 
