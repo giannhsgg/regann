@@ -55,9 +55,10 @@ async def on_message(message):
         
 @client.event
 async def on_message(message):
-    if message.content == ".cookie":
+    if message.content == "sex":
         await client.delete_message(message)
-        await client.send_message(message.author, ":cookie:")
+        #await client.send_message(message.author, ":cookie:")
+        await client.send_message(member, ":heart: :eggplant: :peach:")
         
 client.run('NTUzOTczMzY3OTU1MjU5NDMz.D31rKw.F5qLGDjWlVy0RGAO_5eFT-U5sWY')
 
