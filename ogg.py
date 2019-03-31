@@ -51,6 +51,13 @@ async def on_message(message):
     if message.content == "kurwa":
         await client.send_message(message.channel, "eisai ultimate kathisterimenos")
 
+        
+@bot.event
+async def on_message(message):
+    if message.content == ".cookie":
+        await client.delete_message(message)
+        await client.send_message(message.author, ":cookie:")
+        
 client.run('NTUzOTczMzY3OTU1MjU5NDMz.D31rKw.F5qLGDjWlVy0RGAO_5eFT-U5sWY')
 
 
