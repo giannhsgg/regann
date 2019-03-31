@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import asyncio
 
 client = discord.Client()
 client = commands.Bot(command_prefix = '$')
@@ -52,7 +53,7 @@ async def on_message(message):
         await client.send_message(message.channel, "eisai ultimate kathisterimenos")
 
         
-@bot.event
+@client.event
 async def on_message(message):
     if message.content == ".cookie":
         await client.delete_message(message)
