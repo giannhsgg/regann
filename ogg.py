@@ -58,4 +58,4 @@ async def on_message(message):
         await client.delete_message(message)
         await client.send_message(member, ":heart: :eggplant: :peach:")
         
-client.run('NTUzOTczMzY3OTU1MjU5NDMz.D31rKw.F5qLGDjWlVy0RGAO_5eFT-U5sWY')
+client.run('NTUzOTczMzY3OTU1MjU5NDMz.D2WJWg.kKw_RUVrreU-k0lKx7eueob3kUI')
